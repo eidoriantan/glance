@@ -38,3 +38,10 @@ npm run lint
 npx wrangler login
 npm run deploy    # builds, then runs: wrangler pages deploy dist --project-name glance
 ```
+
+**Custom domain:** the site is set up for `https://glance.eidoriantan.com`. In the Pages project, add it under *Custom domains*. If the domain ever changes, update the absolute URLs in `index.html` (canonical, Open Graph, Twitter, JSON-LD), `public/robots.txt`, and `public/sitemap.xml`.
+
+## SEO assets
+
+- `public/sitemap.xml` and `public/robots.txt`: update `<lastmod>` in the sitemap when you ship notable changes.
+- `public/og-image.png` (1200×630 social preview) and `public/apple-touch-icon.png` (180×180).

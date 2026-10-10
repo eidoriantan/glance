@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://glance.eidoriantan.com/sitemap.xml

@@ -2,20 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Glance: paste or drop Markdown and preview it side by side." />
+    <title>Glance: Markdown Live Preview Editor</title>
+    <meta
+      name="description"
+      content="Paste or drop Markdown and see it rendered side by side. Free, private, and runs entirely in your browser, with GitHub-flavored Markdown, math, Mermaid diagrams, HTML/PDF export, and shareable links."
+    />
+    <meta name="keywords" content="markdown, markdown preview, markdown editor, live preview, GFM, KaTeX, mermaid, markdown to html, markdown to pdf" />
+    <meta name="author" content="eidoriantan" />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0f1117" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="https://glance.eidoriantan.com/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Glance" />
+    <meta property="og:title" content="Glance: Markdown Live Preview Editor" />
+    <meta property="og:description" content="Paste Markdown. See it instantly. Free, private, and runs entirely in your browser." />
+    <meta property="og:url" content="https://glance.eidoriantan.com/" />
+    <meta property="og:image" content="https://glance.eidoriantan.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Glance logo next to a Markdown editor and its rendered preview" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Glance: Markdown Live Preview Editor" />
+    <meta name="twitter:description" content="Paste Markdown. See it instantly. Free, private, and runs entirely in your browser." />
+    <meta name="twitter:image" content="https://glance.eidoriantan.com/og-image.png" />
+    <meta name="twitter:image:alt" content="Glance logo next to a Markdown editor and its rendered preview" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Glance",
+        "url": "https://glance.eidoriantan.com/",
+        "description": "Paste or drop Markdown and see it rendered side by side, with GitHub-flavored Markdown, math, Mermaid diagrams, HTML/PDF export, and shareable links.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "image": "https://glance.eidoriantan.com/og-image.png",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "eidoriantan", "url": "https://eidoriantan.com" }
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Glance</title>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main style="max-width: 640px; margin: 64px auto; padding: 0 16px; font-family: system-ui, sans-serif; color: #e6e8ee">
+        <h1>Glance: Markdown Live Preview Editor</h1>
+        <p>
+          Paste or drop Markdown and see it rendered side by side, with GitHub-flavored Markdown, math, Mermaid
+          diagrams, HTML/PDF export, and shareable links. Glance runs entirely in your browser, so please enable
+          JavaScript to use it.
+        </p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
