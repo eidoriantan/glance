@@ -1,0 +1,19 @@
+export function Logo({ size = 28 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <rect width="64" height="64" rx="14" fill="#171a26" />
+      <g stroke="#8b7cf6" strokeWidth="4.5" strokeLinecap="round">
+        <path d="M24 9v46M40 9v46M9 24h46M9 40h46" />
+      </g>
+      <path
+        d="M12 32c5.5-8.5 12.5-12.5 20-12.5S46.5 23.5 52 32c-5.5 8.5-12.5 12.5-20 12.5S17.5 40.5 12 32Z"
+        fill="#171a26"
+        stroke="#c4bbff"
+        strokeWidth="3.5"
+        strokeLinejoin="round"
+      />
+      <circle cx="32" cy="32" r="7" fill="#8b7cf6" />
+      <circle cx="34.5" cy="29.5" r="2.2" fill="#f4f2ff" />
+    </svg>
+  )
+}
