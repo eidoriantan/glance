@@ -3,6 +3,18 @@
   "private": true,
   "version": "1.0.0",
   "description": "Glance: a fast, private Markdown live-preview editor that runs entirely in the browser, with GFM, KaTeX math, Mermaid diagrams, HTML/PDF export, and shareable links.",
+  "homepage": "https://glance.eidoriantan.com",
+  "bugs": "https://github.com/eidoriantan/glance/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Adriane Justine Tan",
+    "email": "me@eidoriantan.com",
+    "url": "https://eidoriantan.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eidoriantan/glance.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
